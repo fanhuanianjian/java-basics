@@ -2,6 +2,9 @@ package cn.com.yuuuuu.juc.lock;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -11,7 +14,40 @@ import java.util.concurrent.TimeUnit;
  * @version: 1.0
  */
 @Slf4j
-public class TicketBySynchronized {
+public class SynchronizedDemo {
+
+    private static final int MAX_THREAD = 120;
+
+    public static void main(String[] args) {
+
+
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(MAX_THREAD,
+                MAX_THREAD,
+                3L,
+                TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(3),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.AbortPolicy()
+        );
+
+
+        SynchronizedDemo synchronizedDemo = new SynchronizedDemo();
+
+        try {
+
+            for (int i = 0; i < 20; i++) {
+                // Synchronized
+                threadPoolExecutor.execute(synchronizedDemo::sale);
+                threadPoolExecutor.execute(synchronizedDemo::add);
+                threadPoolExecutor.execute(SynchronizedDemo::getName);
+            }
+
+        } finally {
+            threadPoolExecutor.shutdown();
+        }
+
+    }
+
 
     private int num = 10;
 

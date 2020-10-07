@@ -2,6 +2,9 @@ package cn.com.yuuuuu.juc.lock;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -13,8 +16,44 @@ import java.util.concurrent.locks.ReentrantLock;
  * @version: 1.0
  */
 @Slf4j
-public class TicketByReentrantLock {
+public class ReentrantLockDemo {
 
+
+    private static final int MAX_THREAD = 120;
+
+    public static void main(String[] args) {
+
+
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(MAX_THREAD,
+                MAX_THREAD,
+                3L,
+                TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(3),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.AbortPolicy()
+        );
+
+
+        ReentrantLockDemo ticket = new ReentrantLockDemo();
+
+
+        try {
+            for (int i = 0; i < 20; i++) {
+
+                // ReentrantLock
+                threadPoolExecutor.execute(ticket::sale);
+                threadPoolExecutor.execute(ticket::add);
+                threadPoolExecutor.execute(ReentrantLockDemo::getName);
+
+            }
+
+
+
+        } finally {
+            threadPoolExecutor.shutdown();
+        }
+
+    }
 
     private int num = 10;
 
