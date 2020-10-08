@@ -15,7 +15,7 @@ public class CollectionDemo {
 
     public static void main(String[] args) {
 
-        //线程不安全的Collection
+        //线程不安全的Collection系集合
         //多线程并发操作时会出现ConcurrentModificationException(并发修改异常)
         List<String> arrayList = new ArrayList<>();
         List<String> linkList = new LinkedList<>();
@@ -24,11 +24,15 @@ public class CollectionDemo {
         Set<String> linkedHashSet = new LinkedHashSet<>();
         Set<String> treeSet = new TreeSet<>();
 
-        //线程安全的Collection
+
+        //线程安全的Collection系集合
         List<String> vector = new Vector<>();
         // Collections.synchronizedCollection(new ArrayList<>()); 待研究
         Collection<Object> syncArray  = Collections.synchronizedList(new ArrayList<>());
         Collection<Object> syncLinked  = Collections.synchronizedList(new LinkedList<>());
+        Set<String> syncHashSet  = Collections.synchronizedSet(new HashSet<>());
+        Set<String> syncLinkedHashSet =Collections.synchronizedSet(new LinkedHashSet<>());
+        Set<String> syncTreeSet =Collections.synchronizedSet(new TreeSet<>());
 
 
 

@@ -7,6 +7,10 @@ import java.time.LocalDateTime;
 import java.util.concurrent.*;
 
 /**
+ *
+ * volatile 保证可见性
+ * 验证这个问题的关键,不从主内存读，读取线程本身的工作内存
+ *
  * @Author: bhl
  * @Date: 2020/10/7
  * @Description: cn.com.yuuuuu.juc.lock
@@ -45,15 +49,22 @@ public class VolatileDemo {
     // private  boolean flag = true;
     private volatile boolean flag = true;
 
+    /**
+     * while 有以下内容时flag是可见的
+     * Thread.sleep,触发了线程的重新调度,保存当前线程上下文，即刷到主内存。
+     * 存在synchronized,当获取锁以后,清空本地内存中共享变量，从主内存进行加载，在释放锁时将本地内存中共享变量刷新到主内存中。
+     * System.out.println(); 中存在synchronized 同第二种;
+     */
+
     public void run(){
-        //while 有内容时flag是可见的 待分析
+
         while (flag){
 //            try {
 //                TimeUnit.SECONDS.sleep(1);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
-         //  log.info("run:{}:{}",LocalDateTime.now(),Thread.currentThread().getName());
+//          log.info("run:{}:{}",LocalDateTime.now(),Thread.currentThread().getName());
         }
     }
 
