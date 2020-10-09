@@ -50,8 +50,12 @@ public class CreateThread {
         //05 线程池：
 
         /**
-         * 创建线程池-三大方法
+         * 创建线程池-三大方法(不推荐)
+         * 1)FixedThreadPool和SingleThreadPool∶允许的请求队列长度为 Integer.MAXVALUE，可能会堆积大量的请求，从而导致OOM.
+         * 2)CachedThreadPool:允许的创建线程数量为Integer.MAX_VALUE，可能会创建大量的线程，从而导致OOM.
          */
+
+
         //单个线程
         ExecutorService singleThreadPool = Executors.newSingleThreadExecutor();
 

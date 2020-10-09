@@ -69,9 +69,6 @@ public class ReentrantLockDemo {
 
 
 
-    /**
-     * 这个时候的synchronized是对象锁
-     */
     public void sale() {
 
         lock.lock();
