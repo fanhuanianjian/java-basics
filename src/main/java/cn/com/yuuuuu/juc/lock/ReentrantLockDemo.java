@@ -18,6 +18,11 @@ import java.util.concurrent.locks.ReentrantLock;
 @Slf4j
 public class ReentrantLockDemo {
 
+    /**
+     * 参考狂神说
+     * https://www.bilibili.com/video/BV1B7411L7tE?p=1
+     */
+
 
     private static final int MAX_THREAD = 120;
 

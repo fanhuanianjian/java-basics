@@ -16,6 +16,12 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class SynchronizedDemo {
 
+    /**
+     * 参考狂神说
+     * https://www.bilibili.com/video/BV1B7411L7tE?p=1
+     */
+
+
     private static final int MAX_THREAD = 120;
 
     public static void main(String[] args) {

@@ -19,6 +19,10 @@ import java.util.concurrent.*;
 @Slf4j
 public class VolatileDemo {
 
+    /**
+     * 参考狂神说
+     * https://www.bilibili.com/video/BV1B7411L7tE?p=1
+     */
 
     public static void main(String[] args) {
         VolatileDemo volatileDemo = new VolatileDemo();

@@ -141,52 +141,8 @@ public class CreateThread {
 
 }
 
-@Slf4j
-class MyThread1 extends Thread {
-    private static final int MAX = 100;
 
-    @Override
-    public void run() {
-        int sum = 0;
-        log.info("MyThread1:{}", Thread.currentThread().getName());
-        for (int i = 0; i <= MAX; i++) {
-            sum += i;
-        }
-        log.info("sum01:{}", sum);
-    }
-}
 
-@Slf4j
-class MyThread2 implements Runnable {
 
-    private static final int MAX = 100;
 
-    @Override
-    public void run() {
 
-        int sum = 0;
-        log.info("MyThread2:{}", Thread.currentThread().getName());
-        for (int i = 0; i <= MAX; i++) {
-            sum += i;
-        }
-        log.info("sum02:{}", sum);
-
-    }
-}
-
-@Slf4j
-class MyThread3 implements Callable<Integer> {
-
-    private static final int MAX = 100;
-
-    @Override
-    public Integer call() throws Exception {
-        int sum = 0;
-        log.info("MyThread3:{}", Thread.currentThread().getName());
-        for (int i = 0; i <= MAX; i++) {
-            sum += i;
-        }
-
-        return sum;
-    }
-}

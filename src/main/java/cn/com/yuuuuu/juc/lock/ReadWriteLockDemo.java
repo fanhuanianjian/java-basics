@@ -24,6 +24,11 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class ReadWriteLockDemo {
 
     /**
+     * 参考狂神说
+     * https://www.bilibili.com/video/BV1B7411L7tE?p=1
+     */
+
+    /**
      * 独占锁（写锁） 一次只能被一个线程占有
      * 共享锁（读锁） 多个线程可以同时占有
      * ReadWriteLock
