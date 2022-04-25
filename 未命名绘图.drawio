@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-25T08:00:07.739Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="YfrRGBLLAvQ3JOrf4tlR" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-25T08:13:09.259Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="IOlTTbe9Uy1LEjQuAzwO" version="17.4.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -89,23 +89,67 @@
         <mxCell id="LnmDI0T7J5EPWz0-DdbC-39" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="160" y="650" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LnmDI0T7J5EPWz0-DdbC-44" value="根据策略计算货币值" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="510" y="690" width="140" height="40" as="geometry" />
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-44" target="LnmDI0T7J5EPWz0-DdbC-52">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LnmDI0T7J5EPWz0-DdbC-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-46" target="LnmDI0T7J5EPWz0-DdbC-52">
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-44" value="根据策略计算变更的&lt;br&gt;货币值" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="620" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-46" target="LnmDI0T7J5EPWz0-DdbC-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LnmDI0T7J5EPWz0-DdbC-46" value="调用货币接口" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="520" y="550" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LnmDI0T7J5EPWz0-DdbC-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-52" target="LnmDI0T7J5EPWz0-DdbC-44">
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-52" target="LnmDI0T7J5EPWz0-DdbC-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LnmDI0T7J5EPWz0-DdbC-52" value="根据等级计算货币值" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="510" y="620" width="140" height="40" as="geometry" />
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-52" value="根据等级查询权益" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="700" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LnmDI0T7J5EPWz0-DdbC-63" value="责备话" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="510" y="760" width="140" height="40" as="geometry" />
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-64" value="根据权益计算变更的&lt;br&gt;货币值" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="770" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-75" target="LnmDI0T7J5EPWz0-DdbC-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-75" target="LnmDI0T7J5EPWz0-DdbC-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-75" value="是否自动兑换" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="850" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-78" target="LnmDI0T7J5EPWz0-DdbC-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-78" value="更新货币账号" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="860" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-80" target="LnmDI0T7J5EPWz0-DdbC-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-80" value="更新流水" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="940" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-82" value="否" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="470" y="860" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LnmDI0T7J5EPWz0-DdbC-83" target="LnmDI0T7J5EPWz0-DdbC-78">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="950" />
+              <mxPoint x="490" y="920" />
+              <mxPoint x="450" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnmDI0T7J5EPWz0-DdbC-83" value="重新计算变更的货币值" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="940" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
